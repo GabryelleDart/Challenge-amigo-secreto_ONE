@@ -1,4 +1,4 @@
-:root {
+:root { 
     --color-primary: #4B69FD;
     --color-secondary: #FFF9EB;
     --color-tertiary: #C4C4C4;
@@ -221,6 +221,11 @@ ul li {
     align-items: center;
     justify-content: center;
     transition: background 0.3s, transform 0.2s;
+
+    /* Sobrescrevendo propriedades herdadas de button */
+    min-width: auto;
+    max-width: auto;
+    padding: 0;
 }
 
 .remove-btn:hover {
