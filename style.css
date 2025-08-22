@@ -202,9 +202,17 @@ ul li {
     justify-content: center;
 }
 
-/* -------------------------
-   Botão pequeno de remover
---------------------------*/
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 4px 8px; /* padding menor para consistência */
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .remove-btn {
     margin-left: 8px;
     background: #ff4d4d;
@@ -216,15 +224,16 @@ ul li {
     font-size: 12px;          
     line-height: 1;           
     cursor: pointer;
+
     flex-shrink: 0;           
-    display: flex;
+    display: inline-flex;       /* mudar de flex para inline-flex */
     align-items: center;
     justify-content: center;
     transition: background 0.3s, transform 0.2s;
 
-    /* Sobrescrevendo propriedades herdadas de button */
-    min-width: auto;
-    max-width: auto;
+    /* sobrescrevendo estilos de button padrão */
+    min-width: 0;
+    max-width: none;
     padding: 0;
 }
 
