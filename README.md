@@ -68,7 +68,9 @@ Abra o arquivo index.html em seu navegador.
 📸 Demonstração
 
 
-🎲 Sorteio Completo
+
+https://github.com/user-attachments/assets/cd78be2a-6913-4750-9033-c4fee3b29bba
+
 
 
 
