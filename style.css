@@ -1,0 +1,241 @@
+:root {
+    --color-primary: #4B69FD;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #fe652b;
+    --color-button-hover: #e55720;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+}
+
+/* -------------------------
+   Reset e Base
+--------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--color-primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+/* -------------------------
+   Banner
+--------------------------*/
+.header-banner {
+    flex: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0 0;
+}
+
+.main-title {
+    font-size: 48px;
+    font-family: "Merriweather", serif;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-white);
+}
+
+/* -------------------------
+   Seção de Entrada
+--------------------------*/
+.input-section {
+    flex: 60%;
+    background-color: var(--color-secondary);
+    border: 1px solid #000;
+    border-radius: 64px 64px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.section-title {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 10px 0;
+    text-align: center;
+}
+
+.input-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+}
+
+.input-name {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 16px;
+}
+
+/* -------------------------
+   Botões
+--------------------------*/
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Base para todos os botões principais */
+button {
+    flex: 1;
+    min-width: 180px;
+    max-width: 200px;
+    padding: 12px 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Botão de adicionar */
+.button-add {
+    background-color: var(--color-tertiary);
+    color: var(--color-text);
+    border-radius: 0 25px 25px 0;
+}
+
+.button-add:hover {
+    background-color: #a1a1a1;
+}
+
+/* Botão de sortear 1 amigo */
+.button-draw {
+    background-color: var(--color-button);
+    color: var(--color-white);
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+}
+
+/* Botão de sorteio completo */
+.button-full {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.button-full:hover {
+    background-color: #2f47c7;
+}
+
+/* Botão resetar */
+.button-reset {
+    background-color: #777;
+    color: var(--color-white);
+}
+
+.button-reset:hover {
+    background-color: #555;
+}
+
+/* -------------------------
+   Listas
+--------------------------*/
+ul {
+    list-style-type: none;
+    color: var(--color-text);
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    margin: 20px 0;
+    padding: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px 0;
+    padding: 8px 12px;
+    background-color: var(--color-secondary);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Resultado dos sorteios */
+.result-list {
+    margin-top: 15px;
+    color: #05DF05;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.result-list li {
+    justify-content: center;
+}
+
+/* -------------------------
+   Botão pequeno de remover
+--------------------------*/
+.remove-btn {
+    margin-left: 8px;
+    background: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 50%;       
+    width: 20px;              
+    height: 20px;            
+    font-size: 12px;          
+    line-height: 1;           
+    cursor: pointer;
+    flex-shrink: 0;           
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.remove-btn:hover {
+    background: #cc0000;
+    transform: scale(1.15);
+}
+
+/* -------------------------
+   Animações
+--------------------------*/
+.fade-in {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
